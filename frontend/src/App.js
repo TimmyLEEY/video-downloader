@@ -16,7 +16,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "https://video-downloader-6bb5.onrender.com",
+        "https://video-downloader-6bb5.onrender.com/download",
         {
           method: "POST",
           headers: {

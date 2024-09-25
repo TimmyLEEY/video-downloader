@@ -3,7 +3,11 @@ const cors = require("cors");
 const youtubedl = require("youtube-dl-exec");
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://video-downloaderr.netlify.app/",
+  })
+);
 app.use(express.json());
 
 app.post("/download", async (req, res) => {

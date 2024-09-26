@@ -3,20 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "postinstall": "exit 0"
   },
   "engines": {
     "node": "20.15.1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.0",
+    "instagram-scraping": "^1.0.17",
+    "instagram-web-api": "^2.2.2",
     "youtube-dl-exec": "^3.0.9",
     "ytdl-core": "^4.11.5"
   }

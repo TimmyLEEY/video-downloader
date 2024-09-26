@@ -15,16 +15,13 @@ function App() {
     setError("");
 
     try {
-      const response = await fetch(
-        "https://video-downloader-6bb5.onrender.com/download",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ url: videoUrl, format }),
-        }
-      );
+      const response = await fetch("http://localhost:5000/download", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ url: videoUrl, format }),
+      });
 
       if (!response.ok) {
         throw new Error("Failed to download video");
